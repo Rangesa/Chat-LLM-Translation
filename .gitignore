@@ -1,0 +1,46 @@
+# Gradle
+.gradle/
+build/
+out/
+bin/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VSCode
+.vscode/
+
+# Fabric
+run/
+logs/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Minecraft
+crash-reports/
+screenshots/
+saves/
+
+# MOD runtime data
+chat_llm_translation/
+
+# Models (大容量ファイル)
+*.gguf
+*.safetensors
+*.bin
+
+# Temporary files
+*.tmp
+*.log

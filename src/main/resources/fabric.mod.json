@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "chat_llm_translation",
+  "version": "${version}",
+  "name": "Chat LLM Translation",
+  "description": "Real-time chat translation powered by local LLM (llama.cpp + Gemma 3 4B)",
+  "authors": ["ChatLLM Team"],
+  "contact": {
+    "homepage": "https://github.com/yourusername/chat-llm-translation",
+    "sources": "https://github.com/yourusername/chat-llm-translation"
+  },
+  "license": "MIT",
+  "icon": "assets/chat_llm_translation/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "jp.chat_llm_translation.client.Chat_llm_translationClient"
+    ],
+    "main": [
+      "jp.chat_llm_translation.Chat_llm_translation"
+    ],
+    "modmenu": [
+      "jp.chat_llm_translation.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "chat_llm_translation.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21"
+  },
+  "recommends": {
+    "modmenu": "*"
+  }
+}
