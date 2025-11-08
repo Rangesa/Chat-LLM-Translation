@@ -41,6 +41,12 @@ chat_llm_translation/
 *.safetensors
 *.bin
 
+# llama.cpp binaries (ユーザーが自分でダウンロード)
+llama-server.exe
+llama-*.exe
+*.dll
+rpc-server.exe
+
 # Temporary files
 *.tmp
 *.log
