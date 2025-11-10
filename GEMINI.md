@@ -1,4 +1,4 @@
-# GEMINI.md - Chat LLM Translation Project
+# Project.md - Chat LLM Translation Project
 
 ## Project Overview
 
