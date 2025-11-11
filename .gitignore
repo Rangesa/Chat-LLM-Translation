@@ -50,3 +50,6 @@ rpc-server.exe
 # Temporary files
 *.tmp
 *.log
+
+# Documentation (local only)
+docs/
