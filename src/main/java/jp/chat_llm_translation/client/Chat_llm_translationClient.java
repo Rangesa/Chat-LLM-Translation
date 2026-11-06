@@ -134,9 +134,9 @@ public class Chat_llm_translationClient implements ClientModInitializer {
             Text statusText = Text.literal(String.format("§f%s: %d%%", progress.item, progress.getProgressPercent())); // 白
             Text messageText = Text.literal("§7" + progress.message); // 灰色
 
-            context.drawTextWithShadow(textRenderer, titleText, boxX + padding, boxY + padding, 0xFFFFFF);
-            context.drawTextWithShadow(textRenderer, statusText, boxX + padding, boxY + padding + lineHeight, 0xFFFFFF);
-            context.drawTextWithShadow(textRenderer, messageText, boxX + padding, boxY + padding + (lineHeight * 2), 0xFFFFFF);
+            context.drawTextWithShadow(textRenderer, titleText, boxX + padding, boxY + padding, 0xFFFFFFFF);
+            context.drawTextWithShadow(textRenderer, statusText, boxX + padding, boxY + padding + lineHeight, 0xFFFFFFFF);
+            context.drawTextWithShadow(textRenderer, messageText, boxX + padding, boxY + padding + (lineHeight * 2), 0xFFFFFFFF);
 
             // プログレスバー
             int barY = boxY + boxHeight - padding - 3;
