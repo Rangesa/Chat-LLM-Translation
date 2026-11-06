@@ -4,10 +4,12 @@
   "version": "${version}",
   "name": "Chat LLM Translation",
   "description": "Real-time chat translation powered by local LLM (llama.cpp + Gemma 3 4B)",
-  "authors": ["ChatLLM Team"],
+  "authors": [
+    "ChatLLM Team"
+  ],
   "contact": {
-    "homepage": "https://github.com/yourusername/chat-llm-translation",
-    "sources": "https://github.com/yourusername/chat-llm-translation"
+    "homepage": "https://github.com/Rangesa/Chat-LLM-Translation",
+    "sources": "https://github.com/Rangesa/Chat-LLM-Translation"
   },
   "license": "MIT",
   "icon": "assets/chat_llm_translation/icon.png",
@@ -28,9 +30,9 @@
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-    "fabric": "*",
     "minecraft": "${minecraft_version}",
-    "java": ">=21"
+    "java": ">=21",
+    "fabric-api": "*"
   },
   "recommends": {
     "modmenu": "*"

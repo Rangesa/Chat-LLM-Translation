@@ -3,8 +3,7 @@
   "minVersion": "0.8",
   "package": "jp.chat_llm_translation.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [
-  ],
+  "mixins": [],
   "client": [
     "ChatMixin"
   ],

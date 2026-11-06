@@ -34,7 +34,7 @@ screenshots/
 saves/
 
 # MOD runtime data
-chat_llm_translation/
+/chat_llm_translation/
 
 # Models (大容量ファイル)
 *.gguf
@@ -53,3 +53,7 @@ rpc-server.exe
 
 # Documentation (local only)
 docs/
+
+remappedSrc/
+
+remappedClient/
