@@ -235,18 +235,18 @@ public class ConfigScreen extends Screen {
         int centerX = this.width / 2;
 
         // タイトル
-        context.centeredText(this.font, this.title, centerX, 15, 0xFFFFFF);
+        context.centeredText(this.font, this.title, centerX, 15, 0xFFFFFFFF);
 
         // セクションタイトル
-        context.centeredText(this.font, "--- 翻訳設定 ---", centerX, 25, 0xAAAAAA);
-        context.centeredText(this.font, "--- サーバー管理 ---", centerX, 195, 0xAAAAAA);
+        context.centeredText(this.font, "--- 翻訳設定 ---", centerX, 25, 0xFFAAAAAA);
+        context.centeredText(this.font, "--- サーバー管理 ---", centerX, 195, 0xFFAAAAAA);
 
 
         // ステータス表示
         int statusY = this.height - 55;
         String statusIcon = serverRunning ? (serverHealthy ? "§a●" : "§e●") : "§c●";
         String statusLabel = serverRunning ? (serverHealthy ? "Running" : "Starting...") : "Stopped";
-        context.centeredText(this.font, Component.literal("Status: " + statusIcon + " §f" + statusLabel), centerX, statusY, 0xFFFFFF);
+        context.centeredText(this.font, Component.literal("Status: " + statusIcon + " §f" + statusLabel), centerX, statusY, 0xFFFFFFFF);
 
         if (serverRunning) {
             statusY += 12;
@@ -255,7 +255,7 @@ public class ConfigScreen extends Screen {
                 config.llamaGpuId == -1 ? "All" : String.valueOf(config.llamaGpuId),
                 config.llamaModelFile.length() > 20 ? config.llamaModelFile.substring(0, 17) + "..." : config.llamaModelFile
             );
-            context.centeredText(this.font, Component.literal(details), centerX, statusY, 0xFFFFFF);
+            context.centeredText(this.font, Component.literal(details), centerX, statusY, 0xFFFFFFFF);
         }
     }
 

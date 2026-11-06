@@ -135,9 +135,9 @@ public class Chat_llm_translationClient implements ClientModInitializer {
             Component statusText = Component.literal(String.format("§f%s: %d%%", progress.item, progress.getProgressPercent())); // 白
             Component messageText = Component.literal("§7" + progress.message); // 灰色
 
-            context.text(textRenderer, titleText, boxX + padding, boxY + padding, 0xFFFFFF);
-            context.text(textRenderer, statusText, boxX + padding, boxY + padding + lineHeight, 0xFFFFFF);
-            context.text(textRenderer, messageText, boxX + padding, boxY + padding + (lineHeight * 2), 0xFFFFFF);
+            context.text(textRenderer, titleText, boxX + padding, boxY + padding, 0xFFFFFFFF);
+            context.text(textRenderer, statusText, boxX + padding, boxY + padding + lineHeight, 0xFFFFFFFF);
+            context.text(textRenderer, messageText, boxX + padding, boxY + padding + (lineHeight * 2), 0xFFFFFFFF);
 
             // プログレスバー
             int barY = boxY + boxHeight - padding - 3;

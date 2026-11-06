@@ -236,18 +236,18 @@ public class ConfigScreen extends Screen {
         int centerX = this.width / 2;
 
         // タイトル
-        context.drawCenteredTextWithShadow(this.textRenderer, this.title, centerX, 15, 0xFFFFFF);
+        context.drawCenteredTextWithShadow(this.textRenderer, this.title, centerX, 15, 0xFFFFFFFF);
 
         // セクションタイトル
-        context.drawCenteredTextWithShadow(this.textRenderer, "--- 翻訳設定 ---", centerX, 25, 0xAAAAAA);
-        context.drawCenteredTextWithShadow(this.textRenderer, "--- サーバー管理 ---", centerX, 195, 0xAAAAAA);
+        context.drawCenteredTextWithShadow(this.textRenderer, "--- 翻訳設定 ---", centerX, 25, 0xFFAAAAAA);
+        context.drawCenteredTextWithShadow(this.textRenderer, "--- サーバー管理 ---", centerX, 195, 0xFFAAAAAA);
 
 
         // ステータス表示
         int statusY = this.height - 55;
         String statusIcon = serverRunning ? (serverHealthy ? "§a●" : "§e●") : "§c●";
         String statusLabel = serverRunning ? (serverHealthy ? "Running" : "Starting...") : "Stopped";
-        context.drawCenteredTextWithShadow(this.textRenderer, Text.literal("Status: " + statusIcon + " §f" + statusLabel), centerX, statusY, 0xFFFFFF);
+        context.drawCenteredTextWithShadow(this.textRenderer, Text.literal("Status: " + statusIcon + " §f" + statusLabel), centerX, statusY, 0xFFFFFFFF);
 
         if (serverRunning) {
             statusY += 12;
@@ -256,7 +256,7 @@ public class ConfigScreen extends Screen {
                 config.llamaGpuId == -1 ? "All" : String.valueOf(config.llamaGpuId),
                 config.llamaModelFile.length() > 20 ? config.llamaModelFile.substring(0, 17) + "..." : config.llamaModelFile
             );
-            context.drawCenteredTextWithShadow(this.textRenderer, Text.literal(details), centerX, statusY, 0xFFFFFF);
+            context.drawCenteredTextWithShadow(this.textRenderer, Text.literal(details), centerX, statusY, 0xFFFFFFFF);
         }
     }
 
