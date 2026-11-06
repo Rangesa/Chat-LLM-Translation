@@ -1,3 +1,5 @@
+> Minecraft 26.2 までの版別ビルド・導入方法: [対応バージョン](MINECRAFT_VERSIONS.md)。
+
 # Chat LLM Translation
 
 Minecraft用のリアルタイムチャット翻訳MOD - ローカルLLMを使用して完全オフライン動作
